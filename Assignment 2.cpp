@@ -41,42 +41,6 @@ void ThreadTree::Create()
 		Insert(root,nth);
 }
 
-
-/*
-void ThreadTree::Insert(ThreadTree *temp, ThreadTree *nth)
-{
-	if(nth->data<temp->data)	
-	{
-		if(!temp->lth)	
-		{
-			nth->lptr=temp->lptr;
-			temp->lptr=nth;
-			nth->rptr=temp;
-			temp->lth=1;
-		}
-		else Insert(temp->lptr,nth);
-	}
-	else if(nth->data>temp->data)
-	{
-		if(!temp->rth)
-		{
-			nth->rptr=temp->rptr;
-			temp->rptr=nth;
-			nth->lptr=temp;
-			temp->rth=1;
-		}
-		else Insert(temp->rptr,nth);
-	}
-	else 
-	{
-		cout<<"\nDuplicate Data Entered";
-		return;
-	}
-}
-
-*/
-
-
 void ThreadTree::Insert(ThreadTree *temp, ThreadTree *nth)
 {
 	if(nth->data>temp->data)	
